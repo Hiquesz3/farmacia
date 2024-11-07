@@ -1,0 +1,203 @@
+/* Reset e estilos básicos */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #e6f4e6; /* Verde pastel */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    padding-bottom: 60px; /* Espaço para o footer fixo */
+}
+
+/* Estilos para a Navbar */
+.navbar {
+    background-color: #8ecf8e; /* Verde pastel */
+    border-bottom: 3px solid #6aa76a; /* Verde mais escuro */
+    padding: 10px 20px;
+    transition: background-color 0.3s;
+}
+
+.navbar .navbar-brand,
+.navbar .nav-link {
+    color: #3d7a3d; /* Verde escuro */
+    font-weight: bold;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.navbar .navbar-brand:hover,
+.navbar .nav-link:hover {
+    color: #a2e8a2; /* Verde claro */
+    text-decoration: underline;
+}
+
+.navbar-toggler {
+    border-color: transparent;
+}
+
+.navbar-toggler-icon {
+    background-color: #ffffff;
+}
+
+.navbar-collapse {
+    justify-content: flex-end;
+}
+
+/* Estilos da área de conteúdo principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1, h2 {
+    color: #6aa76a; /* Verde mais escuro */
+    margin: 20px 0;
+    text-align: center;
+    font-weight: 700;
+}
+
+h1 {
+    font-size: 2.8em;
+}
+
+h2 {
+    font-size: 2em;
+}
+
+/* Estilos para os Cards */
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+}
+
+.card .card-body {
+    padding: 20px;
+}
+
+/* Estilos do Footer */
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #6aa76a; /* Verde mais escuro */
+    padding: 15px 0;
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.9em;
+    font-weight: 500;
+}
+
+/* Estilos de botões */
+.btn-primary {
+    background-color: #8ecf8e; /* Verde pastel */
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover {
+    background-color: #6aa76a; /* Verde mais escuro */
+    transform: scale(1.05);
+}
+
+.btn-secondary {
+    background-color: #6c757d;
+    color: #ffffff;
+    padding: 8px 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268;
+}
+
+/* Formulários e entradas de texto */
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-control {
+    border-radius: 6px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    width: 100%;
+    transition: box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+    border-color: #8ecf8e; /* Verde pastel */
+    box-shadow: 0 0 8px rgba(142, 207, 142, 0.3);
+}
+
+/* Carrinho e checkout */
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;
+    font-size: 1.1em;
+}
+
+#checkout-form {
+    margin-top: 30px;
+}
+
+#cart-items {
+    margin-top: 20px;
+}
+
+/* Alinhamento centralizado para formulários */
+#checkout-form,
+#add-product-form {
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 25px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos para dispositivos móveis */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2em;
+    }
+
+    .card {
+        margin: 10px 0;
+    }
+    
+    .navbar .nav-link {
+        font-size: 1em;
+    }
+    
+    .navbar-brand {
+        font-size: 1.5em;
+    }
+}
